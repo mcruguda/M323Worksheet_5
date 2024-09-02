@@ -37,11 +37,11 @@ function view(dispatch, model) {
       },
       "Save"
     ),
-    table({ className: "w-full mt-4 border border-gray-300" }, [
+    table({ className: "w-full" }, [
       tr([
-        th({ className: "text-left font-semibold border" }, "Meal"),
-        th({ className: "text-left font-semibold border" }, "Calories"),
-        th({ className: "text-left font-semibold border" }, ""),
+        th({ className: "text-left font-semibold" }, "Meal"),
+        th({ className: "text-left font-semibold " }, "Calories"),
+        th({ className: "text-left font-semibold" }, ""),
       ]),
       ...model.meals.map((meal, index) =>
         tr({ key: index }, [
